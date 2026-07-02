@@ -7,8 +7,8 @@ from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 
 # --- НАСТРОЙКИ ---
-LOCATION_ID = "parkstankozavoda"
-EVENT_ID = 10061
+LOCATION_ID = "serebryanka"
+EVENT_ID = 10013
 PEER_ID = os.getenv("PEER_ID")
 VK_TOKEN = os.getenv("VK_TOKEN")
 NRMS_USER = os.getenv("NRMS_USERNAME")
@@ -151,7 +151,7 @@ if __name__ == "__main__":
         
         # Собираем сообщение
         msg = [
-            f"🌳 5 вёрст в парке Станкозавода",
+            f"🌳 5 вёрст в Пушкино Серебрянка",
             f"🗓 Старт от {display_date}\n━━━━━━━━━━━━━━",
             f"🏁 Финишировало участников: {results['count']}",
             f"📊 Протокол: {results['url']}\n"
