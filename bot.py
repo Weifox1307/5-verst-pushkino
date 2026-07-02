@@ -8,7 +8,7 @@ from datetime import datetime, timedelta, timezone
 # --- НАСТРОЙКИ ---
 VK_TOKEN = os.getenv('VK_TOKEN')
 CHAT_IDS_RAW = os.getenv('VK_CHAT_IDS', '')
-VK_GROUP_ID = os.getenv('VK_GROUP_ID', '228375526') 
+VK_GROUP_ID = os.getenv('VK_GROUP_ID', '221352116') 
 
 try:
     CHAT_IDS = [int(i.strip()) for i in CHAT_IDS_RAW.split(',') if i.strip()]
@@ -16,8 +16,8 @@ except Exception as e:
     print(f"Ошибка CHAT_IDS: {e}")
     sys.exit(1)
 
-LAT = 56.2874
-LON = 43.9160
+LAT = 56.0070
+LON = 37.8644
 
 def get_moscow_now():
     return datetime.now(timezone(timedelta(hours=3)))
